@@ -272,6 +272,14 @@ const showToc = features.tableOfContents !== false && headings.length > 0;
     line-height: 1.8;
   }
 
+  .post-content :global(img) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+  }
+
   /* Prev / Next Navigation */
   .post-nav {
     display: grid;
