@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../config/site';
+---
+
+<BaseLayout title="关于我">
+  <article class="about-page">
+    <header class="about-header">
+      <h1 class="page-title">关于我</h1>
+      <p class="page-subtitle">{siteConfig.tagline}</p>
+    </header>
+    <div class="about-content">
+      <h2>你好，欢迎来到我的博客</h2>
+      <p>这里是我记录学习、技术与生活的地方。我希望把零散的发现整理成文字，也为未来的自己留下一些线索。</p>
+      <h2>我会在这里写什么</h2>
+      <ul>
+        <li>学习过程中值得记下来的笔记。</li>
+        <li>动手实践的经验和项目记录。</li>
+        <li>阅读、生活与日常思考。</li>
+      </ul>
+      <h2>关于这个网站</h2>
+      <p>本站使用 <a href="https://astro.build">Astro</a> 构建，采用 <a href="https://github.com/rnt-rez/minrock">Minrock</a> 模板。文章以 Markdown 保存。</p>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .about-page {
+    padding-top: 1rem;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .page-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2.25rem;
+  }
+
+  .page-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .about-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .manifesto-quote {
+    margin: 1.75rem 0;
+    padding: 1.25rem 1.5rem;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-surface);
+    border-radius: 0 8px 8px 0;
+    font-style: normal;
+  }
+
+  .manifesto-author {
+    display: inline-block;
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+  }
+</style>
